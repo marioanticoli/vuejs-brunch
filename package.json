@@ -1,0 +1,30 @@
+{
+  "name": "vue-brunch-starter-kit",
+  "description": "A Vue.js starter kit with vuex, vue-router and brunch",
+  "version": "1.0.0",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "brunch watch --server",
+    "build": "brunch build -p",
+    "share": "lt --port 3333"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/vue-fontawesome": "^0.0.22",
+    "vue": "^2.5",
+    "vue-router": "^3.0",
+    "vuex": "^3.0"
+  },
+  "devDependencies": {
+    "@nblackburn/vue-brunch": "^2.0",
+    "babel-brunch": "^6.1",
+    "babel-core": "^6.17",
+    "babel-preset-env": "^1.6",
+    "brunch": "^2.10",
+    "localtunnel": "^1.8.3",
+    "uglify-js-brunch": "^2.10",
+    "vue-template-compiler": "^2.3"
+  }
+}
