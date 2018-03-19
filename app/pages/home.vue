@@ -19,14 +19,14 @@
 		components: {
 		},
 		methods: {
-	    // toggle: function (event) {
+			// toggle: function (event) {
 			// 	let self = this
 			// 	self.isActive = self.isActive ? false : true
 			// 	setTimeout(function() {
 			// 		self.isActive = false;
 			// 	}, 5000);
-	    // }
-	  }
+			// }
+		}
 	}
 </script>
 

@@ -39,7 +39,7 @@ export default {
 		chgLang: function (lang) {
 			this.$polyglot.setLang({
 				lang: lang
-			});
+			})
 		}
 	}
 }

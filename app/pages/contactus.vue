@@ -1,18 +1,18 @@
 <template>
   <div id="app">
 		<div id="btn" v-bind:class="{ active: isActive }" v-on:click="toggle">
-    	<font-awesome-icon :icon="icon" />
+      <font-awesome-icon :icon="icon" />
 			Prova
 		</div>
   </div>
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
-import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee'
+import FontAwesomeIcon from "@fortawesome/vue-fontawesome"
+import faCoffee from "@fortawesome/fontawesome-free-solid/faCoffee"
 
 export default {
-  name: 'FAExample',
+  name: "FAExample",
 
 	data: function() {
 		return {
@@ -28,7 +28,7 @@ export default {
 
 	methods: {
 		toggle() {
-			this.isActive ? false : true;
+			this.isActive ? false : true
 		}
 	},
 
