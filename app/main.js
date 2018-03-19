@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Polyglot from 'vue-polyglot';
 
 // import store from './store';
 
@@ -9,7 +10,15 @@ import Products from './pages/products'
 import AboutUs from './pages/aboutus'
 import ContactUs from './pages/contactus'
 
+import Translations from './lang/content.js'
+
 Vue.use(VueRouter)
+Vue.use(Polyglot, {
+  defaultLanguage: 'en',
+  languagesAvailable: ['it']
+});
+
+Vue.locales(Translations);
 
 Vue.config.productionTip = true
 

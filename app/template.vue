@@ -2,10 +2,14 @@
 	<div class="body">
 		<img src="logo.png">
 		<ul class="menu-list">
-			<li><a><router-link to="/home">Home</router-link></a></li>
-			<li><a><router-link to="/products">Products</router-link></a></li>
-			<li><a><router-link to="/about-us">About Us</router-link></a></li>
-			<li><a><router-link to="/contact-us">Contact Us</router-link></a></li>
+			<li><a><router-link to="/home">{{ $t('home') }}</router-link></a></li>
+			<li><a><router-link to="/products">{{ $t('products') }}</router-link></a></li>
+			<li><a><router-link to="/about-us">{{ $t('aboutus') }}</router-link></a></li>
+			<li><a><router-link to="/contact-us">{{ $t('contactus') }}</router-link></a></li>
+		</ul>
+		<ul>
+			<li v-on:click="chgLang('en')">EN</li>
+			<li v-on:click="chgLang('it')">IT</li>
 		</ul>
 		<main class="container">
 			<router-view></router-view>
@@ -31,7 +35,12 @@ export default {
 	// 		return r
 	// 	}
 	},
-	created() {
+	methods: {
+		chgLang: function (lang) {
+			this.$polyglot.setLang({
+				lang: lang
+			});
+		}
 	}
 }
 </script>
